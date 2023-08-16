@@ -67,3 +67,4 @@ body {
         height: calc(100% - 80px)
     }
 }
+.hidden{display:none;}

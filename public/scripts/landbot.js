@@ -19,7 +19,7 @@ function downloadChart (projectName) {
 }
 
 const urlParams = new URLSearchParams(window.location.search)
-const id = urlParams.get('id') || 'H-1686691-RWC0LLC535N1YA7V'
+const id = urlParams.get('id') || 'H-1692333-ACDI11XA17WUDWVD'
 // Create and connect to the Landbot
 // eslint-disable-next-line no-new, no-undef
 new Landbot.Container({

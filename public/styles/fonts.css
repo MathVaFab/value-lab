@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/monserrat/extrabold.woff2') format('woff2'),
+         url('../fonts/monserrat/extrabold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/monserrat/light.woff2') format('woff2'),
+         url('../fonts/monserrat/light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}

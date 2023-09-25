@@ -1,70 +1,106 @@
 @charset "utf-8";
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
-    font-size: .625em;
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
+  font-size: 0.625em;
 }
 
 body {
-    display: flex;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-    font: 1.6rem / 1.34 'Montserrat', sans-serif;
-    font-weight: 300;
-    height: 100%;
+  font: 1.6rem / 1.34 "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+}
+
+section {
+  height: calc(100vh - 120px);
+  width: 50vw;
+  padding-right: 1rem;
+}
+
+aside {
+  height: calc(100vh - 120px);
+  padding-left: 1rem;
+  width: 50vw;
+}
+
+aside > div {
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: visible;
+  height: 100%;
+  border-radius: 1.5rem;
+  border: 1px solid black;
+  box-shadow: 0 4px 2px -2px #0000a910, 0 0 2px 0px #00000010;
 }
 
 .bold {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .no-margin {
-    margin: 0
-}
-
-.landbot-container {
-    flex: 1 0 0;
+  margin: 0;
 }
 
 .header-main {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    background-color: #000;
-    padding: 1rem 2.5rem;
-    box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #000;
+  padding: 1rem 2.5rem;
+  box-sizing: border-box;
 }
 
 .landbot {
-    height: 100%
+  height: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 2px -2px #0000a910, 0 0 2px 0px #00000010;
 }
 
 .chart {
-    flex: 0 0 32%;
-    min-width: -webkit-min-content;
-    min-width: min-content;
-    overflow-y: auto;
-    padding: 28px
+  flex: 0 0 32%;
+  min-width: -webkit-min-content;
+  min-width: min-content;
+  overflow-y: auto;
+  padding: 28px;
 }
 
 @media screen and (max-width: 1000px) {
-    body {
-        flex-direction: column;
-    }
+  main {
+    flex-direction: column;
+  }
 
-    .chart {
-        flex-basis: 50%
-    }
+  section {
+    height: calc(100vh - 120px);
+    width: calc(100vw - 4rem);
+    padding-right: 0rem;
+    margin-bottom: 2rem;
+  }
 
-    .landbot {
-        /* Remove the header's height */
-        height: calc(100% - 80px)
-    }
+  section > div {
+    height: 100%;
+  }
+
+  aside {
+    height: calc(100vh - 120px);
+    padding-left: 0rem;
+    width: calc(100vw - 4rem);
+  }
+
+  .chart {
+    flex-basis: 50%;
+  }
 }
-.hidden{display:none;}
+.hidden {
+  display: none;
+}

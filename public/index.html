@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/layout.css" />
     <link rel="stylesheet" href="./styles/header.css" />
@@ -11,67 +12,89 @@
     <script src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
     <script src="./scripts/chart.js"></script>
     <script src="./scripts/landbot.js"></script>
-    <link rel="icon" type="image/png" sizes="16x16" href="images/round-logo-16x16.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/round-logo-16x16.png"
+    />
     <title>The value wheel</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="landbot-container">
-        <header class="header-main">
-            <div class="header-main--logo-container">
-                <img class="header-main--logo" src="./images/round-logo.svg">
-                <h1 class="header-main--title">The value wheel</h1>
-            </div>
-            <a class="header-main--contact" href="mailto:valuewheel@fabernovel.com">Contact us</a>
-            <div class="header-main--menu">
-                <input type="checkbox" />
-                <span></span>
-                <span id="middle-span"></span>
-                <span></span>
-                <div class="menu">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="https://www.fabernovel.com/fr/article/tendances/la-value-wheel" class="bold">The value wheel</a>
-                            </li>
-                            <li>
-                                <a href="mailto:valuewheel@fabernovel.com" class="bold">Contact us</a>
-                                <p class="no-margin">create your value wheel</p>
-                            </li>
-                        </ul>
-                    </nav>
-                    <footer>
-                        <p class="bold powered-by">Powered by</p>
-                        <img src="./images/text-logo.svg">
-                    </footer>               
-                </div>
-            </div>
-        </header>
-        <div class="landbot"></div>
-    </div>
-    <div class="chart" style="display: none;">
-        <figure class="company_logo">
-            
-        </figure>
-        <div id="chartjs-container">
-            <canvas id="chartjs"></canvas>
+      <header class="header-main">
+        <div class="header-main--logo-container">
+          <img class="header-main--logo" src="./images/round-logo.svg" />
+          <h1 class="header-main--title">The value wheel</h1>
         </div>
-        <aside class="legend">
-            <ul>
-                <li class="target">
+        <a class="header-main--contact" href="mailto:valuewheel@fabernovel.com"
+          >Contact us</a
+        >
+        <div class="header-main--menu">
+          <input type="checkbox" />
+          <span></span>
+          <span id="middle-span"></span>
+          <span></span>
+          <div class="menu">
+            <nav>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.fabernovel.com/fr/article/tendances/la-value-wheel"
+                    class="bold"
+                    >The value wheel</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:valuewheel@fabernovel.com" class="bold"
+                    >Contact us</a
+                  >
+                  <p class="no-margin">create your value wheel</p>
+                </li>
+              </ul>
+            </nav>
+            <footer>
+              <p class="bold powered-by">Powered by</p>
+              <img src="./images/text-logo.svg" />
+            </footer>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="landbot"></div>
+        </section>
+        <aside>
+          <div>
+            <div class="chart" style="display: none">
+              <figure class="company_logo"></figure>
+              <div id="chartjs-container">
+                <canvas id="chartjs"></canvas>
+              </div>
+              <div class="legend">
+                <ul>
+                  <li class="target">
                     <h1 class="target-title">
-                        <button class="accordion"></button><span class="target-name bold"></span>
+                      <button class="accordion"></button
+                      ><span class="target-name bold"></span>
                     </h1>
                     <div class="target-content">
-                        <dl class="target-pillars">
-                            <dt class="target-pillar-name bold"></dt>
-                            <dd class="target-pillar-def">Objective: </dd>
-                            <dd class="target-pillar-kpis">Orientative indicators: </dd>
-                        </dl>
+                      <dl class="target-pillars">
+                        <dt class="target-pillar-name bold"></dt>
+                        <dd class="target-pillar-def">Objective:</dd>
+                        <dd class="target-pillar-kpis">
+                          Orientative indicators:
+                        </dd>
+                      </dl>
                     </div>
-                </li>
-            </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </aside>
+      </main>
     </div>
-</body>
+  </body>
 </html>

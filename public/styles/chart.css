@@ -1,133 +1,133 @@
 @charset "utf-8";
 
 .legend {
-    margin: 0 auto
+  margin: 0 auto;
 }
 
 .legend > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Hide the template nodes */
 .legend > ul > *:first-child,
 .target-content > *:first-child {
-    display: none;
+  display: none;
 }
 
 .target {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .target-title {
-    font-size: inherit;
-    margin: 0
+  font-size: inherit;
+  margin: 0;
 }
 
 .accordion {
-    cursor: pointer;
-    vertical-align: middle;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: none;
-    position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
 }
 
 .accordion:hover {
-    color: grey;
+  color: grey;
 }
 
 .accordion::before,
 .accordion::after {
-    position: absolute;
-    content: "";
-    height: 1px;
-    width: 56%;
-    left: 22%;
-    top: 50%;
-    background-color: black;
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 56%;
+  left: 22%;
+  top: 50%;
+  background-color: black;
 }
 
 .accordion::after {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .target.show .accordion::after {
-    display: none;
+  display: none;
 }
 
 .target-name {
-    display: inline-block;
-    border: 1px solid #000;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 76px;
-    padding-left: 13px;
-    padding-right: 13px;
-    border-spacing: 5px;
-    margin-left: 10px;
-    line-height: 28px;
+  display: inline-block;
+  border: 1px solid #000;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 76px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-spacing: 5px;
+  margin-left: 10px;
+  line-height: 28px;
 }
 
 .target-content {
-    margin-left: 54px;
-    overflow: hidden;
-    height: auto;
-    max-height: 0;
-    transition: max-height .5s linear;
+  margin-left: 54px;
+  overflow: hidden;
+  height: auto;
+  max-height: 0;
+  transition: max-height 0.5s linear;
 }
 
 .target.show .target-content {
-    max-height: 45em;
+  max-height: 45em;
 }
 
 .target-pillars {
-    margin: 18px 0;
+  margin: 18px 0;
 }
 
 .target-pillar-def {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .target-pillar-kpis {
-    margin-left: 0;
-    color: #A6A6A6
+  margin-left: 0;
+  color: #a6a6a6;
 }
 
 .company_logo {
-    margin: 0;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
 }
 
 .company_logo.show {
-    visibility: visible;
+  visibility: visible;
 }
 
 .company_logo img {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #chartjs-container,
 .legend {
-    max-width: 525px;
+  max-width: 525px;
 }
 
 #chartjs-container.show {
-    position: relative; /* requis par chartjs pour le responsive */
-    border-radius: 50%;
-    box-shadow: 0 0 42px 0 rgba(0, 0, 0, 0.3);
-    margin: -1.5em auto 42px
+  position: relative; /* requis par chartjs pour le responsive */
+  border-radius: 50%;
+  box-shadow: 0 0 2rem 0 #00000010, 0 2px 4px 0 #00000005;
+  margin: -1.5em auto 42px;
 }
 
 #chartjs {
-    position: relative; 
-    bottom: 5px /* corrige le décalage vers le bas du graph par rapport au canvas, à expliquer */
+  position: relative;
+  bottom: 5px; /* corrige le décalage vers le bas du graph par rapport au canvas, à expliquer */
 }
